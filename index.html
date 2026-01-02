@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMZ bites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> BMZ Bites</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <A href="contactUs.html">Contact</A>
+        </nav>
+    </header>
+    <h2>MENU</h2>
+  
+    <h3> Cakes</h3>
+    <section class="menu">
+        <div class="item">
+            <img src="chocolate.jpg" alt="chocolate cake">
+            <h3>chocolate Cake</h3>
+            <p> Rs.2200</p>
+            <button onclick="addtocart('Chocolate Cake',2200)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="biscoff-lotus-cake.jpg" alt="lotus cake">
+            <h3> Lotus Cake</h3>
+            <p>Rs.2300</p>
+            <button onclick="addtocart('Lotus Cake',2300)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="three milk.jpg" alt="Three Milk cake">
+            <h3> Three Milk Cake</h3>
+            <p>Rs.2500</p>
+            <button onclick="addtocart('Three Milk Cake',2500)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="malt.jpg" alt="Malt cake">
+            <h3> Malt Cake</h3>
+            <p>Rs.2300</p>
+            <button onclick="addtocart('Malt Cake',2300)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="red velvet.jpg" alt="Red Valvet cake">
+            <h3> Red Valvet Cake</h3>
+            <p>Rs.2500</p>
+            <button onclick="addtocart('Red Valvet Cake',2500)">Add To Cart</button>
+        </div>
+    </section>
+    <h3> Cookies</h3>
+    <section class="menu">
+        <div class="item">
+            <img src="hazulnut.jpg" alt="Hazelnut Cookie">
+            <h3>Hazelnut Cookie</h3>
+            <p>Rs.350</p>
+            <button onclick="addtocart('Hazelnut Cookie',350)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="butter.jpg" alt="butter Cookie">
+            <h3>butter Cookie</h3>
+            <p>Rs.350</p>
+            <button onclick="addtocart('butter Cookie',350)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="peanut.jpg" alt="Peanut butter Cookie">
+            <h3>Peanut butter Cookie</h3>
+            <p>Rs.350</p>
+            <button onclick="addtocart('Peanut butter Cookie',350)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="loaded.jpg" alt="Loaded Chocolate Cookie">
+            <h3>Loaded Chocolate Cookie</h3>
+            <p>Rs.400</p>
+            <button onclick="addtocart('Loaded Chocolate Cookie',400)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="red.jpg" alt="Red Valvet Cookie">
+            <h3>Red Valvet Cookie</h3>
+            <p>Rs.450</p>
+            <button onclick="addtocart('Red Valvet Cookie',450)">Add To Cart</button>
+        </div>
+        <div class="item">
+            <img src="fudge.jpg" alt="Fudge Cookie">
+            <h3>Fudge Cookie</h3>
+            <p>Rs.450</p>
+            <button onclick="addtocart('Fudge Cookie',450)">Add To Cart</button>
+        </div>
+
+    </section>
+    <h3>Sundaes</h3>
+    <section class="menu">
+        <div class="item">
+            <img src="strawberry.jpg" alt="Strawberry Sundae">
+            <h3>Strawberry Sundae</h3>
+            <p>Rs.350</p>
+            <button onclick="addtocart('Strawberry Sundae', 350)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <img src="sundae.jpg" alt="Chocolate Sundae">
+            <h3>Chocolate Sundae</h3>
+            <p>Rs.350</p>
+            <button onclick="addtocart('Chocolate Sundae', 350)">Add to Cart</button>
+        </div>
+    </section>
+    <h3>Special Deals</h3>
+    <section class="menu">
+        
+        <div class="item">
+            <img src="deal1.jpg" alt="Chocolate Lovers Deal">
+            <h3>Chocolate Lovers Deal</h3>
+            <p>Includes: 1 Chocolate Cake + 4 Loaded Chocolate Cookies + 2 Chocolate Sundaes</p>
+            <p><b>Rs.5100</b> (Save 15%)</p>
+            <button onclick="addtocart('Chocolate Lovers Deal', 5100,'1 Chocolate Cake + 4 Loaded Chocolate Cookies + 2 Chocolate Sundaes')">Add to Cart</button>
+        </div>
+        
+
+        <div class="item">
+            <img src="deal2.jpeg" alt="Birthday Treat">
+            <h3>Birthday Treat</h3>
+            <p>Includes: 2 Cakes (Lotus & Chocolate) + 6 Hazelnut Cookies + 3 Sundaes</p>
+            <p><b>Rs.7000</b> (Save 20%)</p>
+            <button onclick="addtocart('Family Treat', 7000,'2 Cakes (Lotus & Chocolate) + 6 Hazelnut Cookies + 3 Sundaes')">Add to Cart</button>
+        </div>
+    </section>
+<script src="script.js"></script>
+  <div id="toast-message"></div>
+</body>
+
+</html>

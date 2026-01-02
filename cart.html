@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h1>BMZ Bites </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="contactUs.html">Contact</a>
+    </nav>
+  </header> 
+<h2> Your Cart</h2>
+<button id="clear-cart-btn">Clear Cart</button>
+
+<div id="cartitem"></div>
+<h3>Total: Rs.<span id="total">0</span> </h3>
+<input type="text" id="discount" placeholder="Enter Code">
+<button onclick="applydiscount()">Apply</button>
+<h3>Final Total: Rs.<span id="final">0</span></h3>
+<button id="checkout-btn">Checkout</button>
+<div id="billing-form" style="display:none;">
+  <h3>Billing Details</h3>
+
+  <div class="billing-box">
+    <label>City:</label>
+    <select id="bill-city">
+      <option value="">Select your Area</option>
+      <option value="malir">malir</option>
+      <option value="dha">dha</option>
+      <option value="gulshan-e-iqbal">gulshan-e-iqbal</option>
+      <option value="gulistan-e-johar">gulistan-e-johar</option>
+      <option value="karsaz">karsaz</option>
+    </select>
+
+    <label>Complete Address:</label>
+    <textarea id="bill-address" placeholder="House no, Street no, Area..."></textarea>
+
+    <label>Phone Number:</label>
+    <input type="text" id="bill-phone" placeholder="03xx-xxxxxxx">
+
+    <label>Payment Method:</label>
+    <select id="bill-payment">
+      <option value="Cash on Delivery">Cash on Delivery</option>
+      <option value="Card">Debit/Credit Card</option>
+      <option value="Bank Transfer">Bank Transfer</option>
+    </select>
+
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+    showcart();
+</script>
+</body>
+</html>
